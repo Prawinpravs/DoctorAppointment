@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book an appointment</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="center">
+            <img class="mx-auto d-block" src="ampu.png" alt="">
+            <h6 class="text-center">Consult Dr!</h6>
+            <input class="checkbox" type="checkbox" id="show">
+            <label for="show" class="show-btn">Book An Appointment</label>
+            <div class="container">
+                <label for="show" class="close-btn fas fa-times" title="close"></label>
+                <div class="text">
+                    Book An Appointment</div>
+
+
+                <form action="mail.php" method="POST" name="form">
+                    <div class="data">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Patient name" required>
+                    </div>
+                    <div class="data">
+                        <label for="phone">Phone Number</label>
+                        <input type="phone" name="phone" placeholder="Phone number" required>
+                    </div>
+                    <div class="data">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" placeholder="email" required>
+                    </div>
+                    <div class="data">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" required>
+                    </div>
+                    <div class="data">
+                        <label for="time">Time</label>
+                        <input type="time" name="time" required>
+                    </div>
+                    <div class="data">
+                        <label for="message">Reason for an appointment</label>
+                        <textarea name="message" id="" cols="41" rows="2" placeholder="Enter reason for an appointment"
+                            required></textarea>
+                    </div>
+                    <div class="checkbox-light">
+                        <input type="checkbox">
+                        <label>Check me out</label>
+                    </div>
+                    <div class="btn1">
+                        <div class="inner">
+                        </div>
+                        <button type="button"><a class="btn" href="index.html">Close</a></button>
+                    </div>
+                    <div class="btn2">
+                        <div class="inner">
+                        </div>
+                        <button type="submit" name="submit" value="send">Book</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
